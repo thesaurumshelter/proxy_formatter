@@ -1,7 +1,7 @@
 import re
 
 
-def format_proxy(proxy_str: str):
+def format_proxy(proxy_str: str) -> dict | None:
     formatted_proxy = {}
     protocol = None
     proxy = proxy_str
