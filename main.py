@@ -16,7 +16,6 @@ class Proxy:
     def format_proxy(self) -> dict | None:
         """
         Format the proxy string into a structured dictionary or string.
-
         :return: dict | str
         """
         formatted_proxy = {}
@@ -63,7 +62,7 @@ class Proxy:
         return (f"{self.formatted_proxy['user']}:{self.formatted_proxy['password']}"
                 f"@{self.formatted_proxy['host']}:{self.formatted_proxy['port']}")
 
-    def to_host(self) -> str:
+    def to_ip(self) -> str:
         """Format the proxy to ip str format."""
         if not self.formatted_proxy:
             return ""
